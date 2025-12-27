@@ -26,7 +26,33 @@ To build a C program that prints integer, float,character, and string literals o
 ### Step 4: 
    Stop
 # Program:
+###
+#include <stdio.h>
+
+int main() {
+
+int intLiteral = 100;
+
+float floatLiteral = 12.345;
+
+char charLiteral = 'A';
+
+char stringLiteral[] = "Hello, Abdullah!";
+
+printf("Integer Literal: %d\n", intLiteral);
+
+printf("Float Literal: %.3f\n", floatLiteral);
+
+printf("Character Literal: %c\n", charLiteral);
+
+printf("String Literal: %s\n", stringLiteral);
+
+return 0;
+}
+###
 # Output:
+<img width="515" height="423" alt="image" src="https://github.com/user-attachments/assets/85d222e4-2ed9-4d18-a765-b649a1928abb" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -57,7 +83,24 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 6:  
   Stop
 # Program:
+#include <stdio.h>
+
+#define PI 3.14159
+
+int main() {
+
+const int AGE = 20;
+
+printf("Macro Constant PI: %f\n", PI);
+
+printf("Constant Variable AGE: %d\n", AGE);
+
+return 0;
+}
+
 # Output:
+<img width="518" height="255" alt="image" src="https://github.com/user-attachments/assets/4dce6887-cc2f-4fae-8ab3-4fc0d51b0637" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -81,9 +124,33 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 5:    
    Stop
 # Program:
-# Output:
-# Result: 
+#include <stdio.h>
 
+int main() {
+
+int num = 25;   
+
+float percentage = 87.65f;
+
+double bigValue = 12345.6789;
+
+char grade = 'A';    
+
+printf("Integer value: %d\n", num);
+
+printf("Float value: %.2f\n", percentage);
+
+printf("Double value: %.4lf\n", bigValue);
+
+printf("Character value: %c\n", grade);
+
+return 0;
+}
+# Output:
+<img width="468" height="318" alt="image" src="https://github.com/user-attachments/assets/bae4f8cc-a368-44a4-a815-5e0650efba17" />
+
+# Result: 
+Thus, the program was implemented and executed successfully, and the required output was obtained.
 # 19AI304-Fundamentals-of-C-Programming-2025-Odd
 # IAPR-1- Module 1 - FoC
 # Ex.No:4
@@ -120,7 +187,58 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+#include <stdio.h>
+
+int main() {
+
+int a, b;
+
+printf("Enter two integers: ");
+
+scanf("%d %d", &a, &b);
+
+printf("\n--- Arithmetic Operations ---\n");
+
+printf("Addition: %d + %d = %d\n", a, b, a + b);
+
+printf("Subtraction: %d - %d = %d\n", a, b, a - b);
+
+printf("Multiplication: %d * %d = %d\n", a, b, a * b);
+
+if (b != 0) {
+
+    printf("Division: %d / %d = %d\n", a, b, a / b);
+    
+    printf("Remainder: %d %% %d = %d\n", a, b, a % b);
+    
+} else {
+
+    printf("Division: Not possible (division by zero)\n");
+    
+    printf("Remainder: Not possible (division by zero)\n");
+}
+
+printf("\n--- Bitwise Operations ---\n");
+
+printf("AND (a & b): %d\n", a & b);
+
+printf("OR (a | b): %d\n", a | b);
+
+printf("XOR (a ^ b): %d\n", a ^ b);
+
+printf("Left Shift (a << 1): %d\n", a << 1);
+
+printf("Right Shift (a >> 1): %d\n", a >> 1);
+
+printf("NOT (~a): %d\n", ~a);
+
+printf("NOT (~b): %d\n", ~b);
+
+return 0;
+}
 # Output:
+<img width="653" height="877" alt="image" src="https://github.com/user-attachments/assets/5efc8e7a-bc37-4dff-94ca-c504b96549d1" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -165,7 +283,42 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+#include <stdio.h>
+
+int main() {
+
+char ch;
+
+printf("Enter a character: ");
+
+scanf("%c", &ch);
+
+( (ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z') ) ?
+
+    ( (ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'||
+    
+       ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U') ?
+       
+        printf("Vowel\n") :
+        
+        printf("Consonant\n")
+        
+    )
+    
+:
+
+    ( (ch >= '0' && ch <= '9') ?
+    
+        printf("Digit\n") :
+        
+        printf("Special Symbol\n")
+        
+    );
+    
+return 0;
 # Output:
+<img width="518" height="287" alt="image" src="https://github.com/user-attachments/assets/ba2543f7-27db-4532-9288-f7514d022684" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
